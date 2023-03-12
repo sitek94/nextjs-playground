@@ -1,11 +1,11 @@
 'use client'
 
-import classes from './page.module.css'
-
 export default function Home() {
   return (
-    <main className={classes.main}>
+    <main>
       <button onClick={playIntro}>Start</button>
+
+      <canvas></canvas>
     </main>
   )
 }
