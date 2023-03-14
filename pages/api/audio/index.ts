@@ -14,6 +14,5 @@ export default async function handler(
   res.setHeader('Content-Length', fileContents.length)
   res.setHeader('Content-Disposition', 'attachment; filename=song.mp3')
 
-  // send the mp3 file as a binary stream
   res.end(fileContents)
 }
